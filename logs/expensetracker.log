@@ -1,0 +1,1284 @@
+ERROR 2026-04-21 18:22:00,501 exception 15316 11964 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:00,533 log 15316 11964 Bad Request: /
+WARNING 2026-04-21 18:22:00,538 basehttp 15316 11964 "GET / HTTP/1.1" 400 143
+ERROR 2026-04-21 18:22:00,736 exception 15316 2132 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:00,782 log 15316 2132 Bad Request: /favicon.ico
+WARNING 2026-04-21 18:22:00,800 basehttp 15316 2132 "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2026-04-21 18:22:07,015 exception 15316 15796 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:07,095 log 15316 15796 Bad Request: /expenses
+WARNING 2026-04-21 18:22:07,104 basehttp 15316 15796 "GET /expenses HTTP/1.1" 400 143
+ERROR 2026-04-21 18:22:07,409 exception 15316 8796 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:07,437 log 15316 8796 Bad Request: /favicon.ico
+WARNING 2026-04-21 18:22:07,447 basehttp 15316 8796 "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2026-04-21 18:22:14,119 exception 15316 16944 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:14,156 log 15316 16944 Bad Request: /admin
+WARNING 2026-04-21 18:22:14,180 basehttp 15316 16944 "GET /admin HTTP/1.1" 400 143
+ERROR 2026-04-21 18:22:14,358 exception 15316 16064 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:22:14,383 log 15316 16064 Bad Request: /favicon.ico
+WARNING 2026-04-21 18:22:14,392 basehttp 15316 16064 "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2026-04-21 18:27:33,843 basehttp 1768 13528 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-21 18:27:34,049 basehttp 1768 12328 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-21 18:27:34,237 basehttp 1768 14500 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-21 18:27:34,387 basehttp 1768 12212 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-21 18:28:28,759 exception 1768 7408 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:28:28,769 log 1768 7408 Bad Request: /
+WARNING 2026-04-21 18:28:28,770 basehttp 1768 7408 "GET / HTTP/1.1" 400 143
+ERROR 2026-04-21 18:28:29,413 exception 1768 1736 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\middleware\security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2026-04-21 18:28:29,415 log 1768 1736 Bad Request: /favicon.ico
+WARNING 2026-04-21 18:28:29,416 basehttp 1768 1736 "GET /favicon.ico HTTP/1.1" 400 143
+WARNING 2026-04-21 18:50:21,781 log 9436 14284 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:50:21,804 basehttp 9436 8016 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:50:21,805 basehttp 9436 14284 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:50:25,358 log 9436 14284 Not Found: /favicon.ico
+WARNING 2026-04-21 18:50:25,358 basehttp 9436 14284 "GET /favicon.ico HTTP/1.1" 404 5462
+WARNING 2026-04-21 18:50:39,198 basehttp 9436 336 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:50:39,229 log 9436 8704 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:50:39,235 basehttp 9436 8704 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-21 18:50:44,480 log 9436 8704 Internal Server Error: /forecast/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\expense_forecast\views.py", line 119, in forecast
+    category_forecasts = data.groupby('Category')['Expenses'].sum().to_dict()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 3146, in sum
+    result = self._agg_general(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1906, in _agg_general
+    result = self._cython_agg_general(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1998, in _cython_agg_general
+    new_mgr = data.grouped_reduce(array_func)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\internals\base.py", line 367, in grouped_reduce
+    res = func(arr)
+          ^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1973, in array_func
+    result = self._grouper._cython_operation(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 831, in _cython_operation
+    return cy_op.cython_operation(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 537, in cython_operation
+    self._validate_axis(axis, values)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 517, in _validate_axis
+    assert axis == 1, axis
+           ^^^^^^^^^
+AssertionError: 0
+ERROR 2026-04-21 18:50:44,502 basehttp 9436 8704 "GET /forecast/ HTTP/1.1" 500 126313
+ERROR 2026-04-21 18:51:20,861 log 9436 8704 Internal Server Error: /forecast/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\expense_forecast\views.py", line 119, in forecast
+    category_forecasts = data.groupby('Category')['Expenses'].sum().to_dict()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 3146, in sum
+    result = self._agg_general(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1906, in _agg_general
+    result = self._cython_agg_general(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1998, in _cython_agg_general
+    new_mgr = data.grouped_reduce(array_func)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\internals\base.py", line 367, in grouped_reduce
+    res = func(arr)
+          ^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1973, in array_func
+    result = self._grouper._cython_operation(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 831, in _cython_operation
+    return cy_op.cython_operation(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 537, in cython_operation
+    self._validate_axis(axis, values)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 517, in _validate_axis
+    assert axis == 1, axis
+           ^^^^^^^^^
+AssertionError: 0
+ERROR 2026-04-21 18:51:20,879 basehttp 9436 8704 "GET /forecast/ HTTP/1.1" 500 126313
+ERROR 2026-04-21 18:51:27,838 log 9436 8704 Internal Server Error: /forecast/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\expense_forecast\views.py", line 119, in forecast
+    category_forecasts = data.groupby('Category')['Expenses'].sum().to_dict()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 3146, in sum
+    result = self._agg_general(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1906, in _agg_general
+    result = self._cython_agg_general(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1998, in _cython_agg_general
+    new_mgr = data.grouped_reduce(array_func)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\internals\base.py", line 367, in grouped_reduce
+    res = func(arr)
+          ^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\groupby.py", line 1973, in array_func
+    result = self._grouper._cython_operation(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 831, in _cython_operation
+    return cy_op.cython_operation(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 537, in cython_operation
+    self._validate_axis(axis, values)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\pandas\core\groupby\ops.py", line 517, in _validate_axis
+    assert axis == 1, axis
+           ^^^^^^^^^
+AssertionError: 0
+ERROR 2026-04-21 18:51:27,853 basehttp 9436 8704 "GET /forecast/ HTTP/1.1" 500 126313
+WARNING 2026-04-21 18:53:23,388 log 648 17260 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:53:23,405 basehttp 648 8584 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:53:23,406 basehttp 648 17260 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:53:41,425 basehttp 648 17260 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:53:41,443 log 648 8648 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:53:41,449 basehttp 648 8648 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:53:50,476 log 648 4152 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:53:50,492 basehttp 648 8648 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:53:50,493 basehttp 648 4152 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:53:55,167 basehttp 648 9924 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:53:55,190 log 648 15804 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:53:55,204 basehttp 648 15804 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:54:07,944 log 648 15804 Bad Request: /api/predict-category/
+WARNING 2026-04-21 18:54:07,959 basehttp 648 15804 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-21 18:54:08,308 log 648 15804 Bad Request: /api/predict-category/
+WARNING 2026-04-21 18:54:08,310 basehttp 648 15804 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-21 18:54:35,056 log 648 4088 Forbidden: /api/update-dataset/
+WARNING 2026-04-21 18:54:35,059 basehttp 648 4088 "POST /api/update-dataset/ HTTP/1.1" 403 58
+WARNING 2026-04-21 18:54:35,059 views 648 3448 Dataset update failed: 403
+WARNING 2026-04-21 18:54:35,201 basehttp 648 3448 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:54:35,208 log 648 5160 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:54:35,212 basehttp 648 5160 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:54:40,388 basehttp 648 5160 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:54:40,408 log 648 4152 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:54:40,415 basehttp 648 4152 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:55:28,972 log 648 9396 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:55:28,988 basehttp 648 5400 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:55:28,989 basehttp 648 9396 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:55:42,575 log 648 11452 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-21 18:55:42,591 basehttp 648 9396 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:55:42,591 basehttp 648 11452 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-21 18:55:42,618 log 648 2640 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:55:42,629 basehttp 648 2640 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:56:03,433 log 648 11452 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:56:03,449 basehttp 648 2640 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:56:03,449 basehttp 648 11452 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-21 18:56:23,070 log 648 12008 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-21 18:56:23,083 basehttp 648 11452 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-21 18:56:23,083 basehttp 648 12008 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-21 18:56:37,063 log 648 12008 Internal Server Error: /goals/list_goals/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: goals_goal
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 26, in list_goals
+    return render(request, 'goals/list_goals.html', {'goals': goals, 'add_amount_form': add_amount_form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: goals_goal
+ERROR 2026-04-21 18:56:37,148 basehttp 648 12008 "GET /goals/list_goals/ HTTP/1.1" 500 226845
+ERROR 2026-04-28 18:46:05,233 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:46:05,238 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:47:05,733 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:47:05,876 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:47:12,393 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2026-04-28 18:49:28,119 log 15472 4932 Not Found: /expenses
+WARNING 2026-04-28 18:49:28,121 basehttp 15472 4932 "GET /expenses HTTP/1.1" 404 5453
+WARNING 2026-04-28 18:49:28,199 log 15472 4932 Not Found: /expenses
+WARNING 2026-04-28 18:49:28,221 basehttp 15472 4932 "GET /expenses HTTP/1.1" 404 5453
+ERROR 2026-04-28 18:49:28,356 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2026-04-28 18:49:28,634 log 15472 4932 Not Found: /favicon.ico
+WARNING 2026-04-28 18:49:28,701 basehttp 15472 4932 "GET /favicon.ico HTTP/1.1" 404 5462
+ERROR 2026-04-28 18:49:28,854 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:49:28,879 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2026-04-28 18:49:29,188 log 15472 4932 Not Found: /favicon.ico
+WARNING 2026-04-28 18:49:29,189 basehttp 15472 4932 "GET /favicon.ico HTTP/1.1" 404 5462
+ERROR 2026-04-28 18:49:29,192 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:45,752 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:45,753 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:45,756 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:45,760 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:45,762 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:46,045 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:50:46,047 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:52:11,481 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:52:11,483 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:52:11,486 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:53:23,536 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:53:23,538 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:53:23,539 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:53:23,541 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-04-28 18:53:23,542 basehttp 15472 4932 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2026-04-28 18:54:24,007 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:54:24,034 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:54:24,034 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:54:42,865 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:54:42,974 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:54:42,976 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:54:48,232 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:54:48,331 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:54:48,331 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 18:54:50,778 log 15472 4932 Internal Server Error: /account/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\userprofile\views.py", line 9, in userprofile
+    Sources=Source.objects.filter(owner=request.user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000002369C9DB590>>.
+ERROR 2026-04-28 18:54:50,806 basehttp 15472 4932 "GET /account/ HTTP/1.1" 500 133299
+WARNING 2026-04-28 18:55:04,786 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:55:04,799 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:55:04,800 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:55:19,512 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:55:19,816 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:55:19,817 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:55:25,461 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:55:25,767 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:55:25,768 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:55:59,304 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:55:59,392 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:55:59,392 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:56:07,397 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:56:07,499 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:56:07,501 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:58:07,327 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:58:07,386 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:58:07,486 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:59:31,662 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:59:31,691 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:59:31,692 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:59:31,834 log 15472 4932 Not Found: /favicon.ico
+WARNING 2026-04-28 18:59:31,836 basehttp 15472 4932 "GET /favicon.ico HTTP/1.1" 404 5462
+WARNING 2026-04-28 18:59:35,188 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:59:35,452 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:59:35,453 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 18:59:51,095 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 18:59:51,395 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 18:59:51,395 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:00:10,446 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:00:10,470 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:00:10,472 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:04:27,097 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:04:27,120 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:04:27,121 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:04:33,624 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:04:33,938 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:04:33,940 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:04:42,862 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:04:43,105 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:04:43,107 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:11:50,464 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:11:50,761 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:11:50,763 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:11:58,811 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:11:58,986 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:11:58,986 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:01,854 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:01,945 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:01,947 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:06,474 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:06,558 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:06,559 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:09,468 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:09,593 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:09,595 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:14,029 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:14,041 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:14,042 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:17,715 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:17,842 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:17,842 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:21,655 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:21,702 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:21,703 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 19:12:37,548 log 15472 4932 Internal Server Error: /set-daily-expense-limit/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\expenses\views.py", line 350, in set_expense_limit
+    existing_limit.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1129, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1194, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 2003, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1561, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1966, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 1008, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 2130, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 1001, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\fields\__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'daily_expense_limit' expected a number but got ''.
+ERROR 2026-04-28 19:12:37,564 basehttp 15472 4932 "POST /set-daily-expense-limit/ HTTP/1.1" 500 137379
+WARNING 2026-04-28 19:12:41,762 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:42,068 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:42,068 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:44,524 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:44,699 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:44,699 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:12:54,851 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:12:54,908 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:12:54,910 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:13:01,857 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:13:02,162 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:13:02,164 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:13:34,028 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:13:34,114 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:13:34,123 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:06,933 log 15472 4932 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-28 19:14:06,936 basehttp 15472 4932 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-28 19:14:07,288 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:07,334 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:07,334 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:18,393 log 15472 4932 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-28 19:14:18,393 basehttp 15472 4932 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-28 19:14:18,484 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:18,487 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:18,505 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:23,234 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:23,293 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:23,295 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:30,580 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:30,692 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:30,696 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:43,846 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:43,891 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:43,893 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:46,807 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:46,957 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:46,959 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:48,665 log 15472 4932 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-28 19:14:48,667 basehttp 15472 4932 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-28 19:14:48,710 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:48,738 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:48,745 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:14:51,257 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:14:51,304 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:14:51,305 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:15:03,212 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:15:03,419 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:15:03,419 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 19:15:33,084 log 15472 4932 Internal Server Error: /goals/list_goals/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: goals_goal
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 26, in list_goals
+    return render(request, 'goals/list_goals.html', {'goals': goals, 'add_amount_form': add_amount_form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: goals_goal
+ERROR 2026-04-28 19:15:33,099 basehttp 15472 4932 "GET /goals/list_goals/ HTTP/1.1" 500 227155
+WARNING 2026-04-28 19:19:17,188 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:19:17,354 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:19:17,445 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:20:15,622 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:20:15,720 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:20:15,735 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:20:18,155 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:20:18,223 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:20:18,225 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 19:21:02,670 log 15472 4932 Internal Server Error: /goals/add_goal/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 11, in add_goal
+    goal=form.save()
+         ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+ERROR 2026-04-28 19:21:02,676 basehttp 15472 4932 "POST /goals/add_goal/ HTTP/1.1" 500 161156
+WARNING 2026-04-28 19:23:51,037 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:23:51,219 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:23:51,219 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 19:24:18,358 log 15472 4932 Internal Server Error: /goals/add_goal/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 11, in add_goal
+    goal=form.save()
+         ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+ERROR 2026-04-28 19:24:18,362 basehttp 15472 4932 "POST /goals/add_goal/ HTTP/1.1" 500 161156
+WARNING 2026-04-28 19:24:22,847 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:24:23,196 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:24:23,196 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:24:25,603 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:24:26,180 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:24:26,318 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:24:42,569 basehttp 15472 4932 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:24:42,767 log 15472 4932 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:24:42,768 basehttp 15472 4932 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:55:21,784 log 4172 5800 Method Not Allowed: /api/predict-category/
+WARNING 2026-04-28 19:55:21,787 basehttp 4172 5800 "GET /api/predict-category/ HTTP/1.1" 405 5677
+WARNING 2026-04-28 19:55:22,128 log 4172 3988 Method Not Allowed: /api/predict-category/
+WARNING 2026-04-28 19:55:22,128 basehttp 4172 3988 "GET /api/predict-category/ HTTP/1.1" 405 5677
+WARNING 2026-04-28 19:55:22,611 log 4172 4792 Not Found: /favicon.ico
+WARNING 2026-04-28 19:55:22,611 basehttp 4172 4792 "GET /favicon.ico HTTP/1.1" 404 5462
+WARNING 2026-04-28 19:55:56,129 basehttp 4172 1708 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 19:55:56,219 log 4172 2532 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 19:55:56,219 basehttp 4172 2532 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 19:55:58,031 log 4172 1088 Not Found: /favicon.ico
+WARNING 2026-04-28 19:55:58,031 basehttp 4172 1088 "GET /favicon.ico HTTP/1.1" 404 5462
+WARNING 2026-04-28 20:06:33,207 basehttp 4172 8720 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:06:33,237 log 4172 13212 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:06:33,246 basehttp 4172 13212 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:06:36,305 log 4172 7776 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:06:36,313 basehttp 4172 13212 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:06:36,313 basehttp 4172 7776 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:06:38,135 basehttp 4172 7776 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:06:38,321 log 4172 8564 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:06:38,321 basehttp 4172 8564 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:07:13,266 log 4172 10184 Bad Request: /api/predict-category/
+WARNING 2026-04-28 20:07:13,282 basehttp 4172 10184 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-28 20:07:13,306 log 4172 10184 Bad Request: /api/predict-category/
+WARNING 2026-04-28 20:07:13,322 basehttp 4172 10184 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-28 20:07:16,528 log 4172 8564 Bad Request: /api/predict-category/
+WARNING 2026-04-28 20:07:16,536 basehttp 4172 8564 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-28 20:07:18,187 log 4172 8564 Bad Request: /api/predict-category/
+WARNING 2026-04-28 20:07:18,187 basehttp 4172 8564 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-28 20:07:18,481 log 4172 8564 Bad Request: /api/predict-category/
+WARNING 2026-04-28 20:07:18,481 basehttp 4172 8564 "POST /api/predict-category/ HTTP/1.1" 400 53
+WARNING 2026-04-28 20:07:42,836 log 4172 11876 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:07:42,853 basehttp 4172 10184 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:07:42,853 basehttp 4172 11876 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:07:45,681 log 4172 8564 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:07:45,697 basehttp 4172 11672 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:07:45,713 basehttp 4172 8564 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:08:08,498 log 4172 11876 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:08:08,512 basehttp 4172 8564 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:08:08,512 basehttp 4172 11876 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:08:18,257 log 4172 12492 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:08:18,266 basehttp 4172 11876 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:08:18,266 basehttp 4172 12492 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:09:04,595 log 4172 12492 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-28 20:09:04,598 basehttp 4172 12492 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-28 20:09:04,681 basehttp 4172 12492 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:09:04,761 log 4172 11284 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:09:04,761 basehttp 4172 11284 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:09:10,862 log 4172 1616 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:09:10,878 basehttp 4172 11284 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:09:10,878 basehttp 4172 1616 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:09:12,884 log 4172 13084 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:09:12,900 basehttp 4172 1616 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:09:12,900 basehttp 4172 13084 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 20:09:31,093 log 4172 13084 Internal Server Error: /goals/add_goal/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 11, in add_goal
+    goal=form.save()
+         ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+ERROR 2026-04-28 20:09:31,124 basehttp 4172 13084 "POST /goals/add_goal/ HTTP/1.1" 500 160678
+ERROR 2026-04-28 20:09:37,541 log 4172 13084 Internal Server Error: /goals/add_goal/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 11, in add_goal
+    goal=form.save()
+         ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+ERROR 2026-04-28 20:09:37,541 basehttp 4172 13084 "POST /goals/add_goal/ HTTP/1.1" 500 160668
+WARNING 2026-04-28 20:10:30,023 basehttp 4172 13084 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:10:30,217 log 4172 9528 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:10:30,221 basehttp 4172 9528 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:10:34,590 basehttp 4172 9528 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:10:34,614 log 4172 3800 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:10:34,619 basehttp 4172 3800 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:20:36,942 basehttp 4172 2920 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:20:36,973 log 4172 7220 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:20:36,973 basehttp 4172 7220 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:20:38,260 basehttp 4172 7220 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:20:38,284 log 4172 10488 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:20:38,292 basehttp 4172 10488 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+ERROR 2026-04-28 20:20:54,357 log 4172 10488 Internal Server Error: /goals/add_goal/
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\Documents\dead final FYP\Expensetracker-master\goals\views.py", line 11, in add_goal
+    goal=form.save()
+         ^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jk\miniconda3\envs\fyp\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: goals_goal.owner_id
+ERROR 2026-04-28 20:20:54,357 basehttp 4172 10488 "POST /goals/add_goal/ HTTP/1.1" 500 160668
+WARNING 2026-04-28 20:23:33,554 basehttp 5896 12092 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:23:33,554 log 5896 7016 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:23:33,554 basehttp 5896 7016 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:24:01,378 log 5896 3664 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:24:01,389 basehttp 5896 7016 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:24:01,389 basehttp 5896 3664 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:24:16,007 basehttp 5896 3664 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:24:16,249 log 5896 12944 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:24:16,254 basehttp 5896 12944 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:04,783 basehttp 12420 12948 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:04,801 log 12420 13048 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:04,803 basehttp 12420 13048 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:08,210 basehttp 12420 13048 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:08,229 log 12420 3608 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:08,231 basehttp 12420 3608 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:10,178 basehttp 12420 3608 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:10,548 log 12420 7688 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:10,548 basehttp 12420 7688 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:12,049 basehttp 12420 7688 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:12,284 log 12420 324 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:12,284 basehttp 12420 324 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:12,706 basehttp 12420 324 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:12,961 log 12420 13104 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:12,961 basehttp 12420 13104 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:33:17,832 basehttp 12420 13104 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:33:18,073 log 12420 3652 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:33:18,073 basehttp 12420 3652 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:35:47,525 log 3776 12220 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:35:47,525 basehttp 3776 9556 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:35:47,527 basehttp 3776 12220 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:35:52,027 log 3776 5896 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:35:52,039 basehttp 3776 12220 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:35:52,040 basehttp 3776 5896 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:35:59,952 basehttp 3776 5896 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:00,174 log 3776 9252 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:00,174 basehttp 3776 9252 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:36:06,180 basehttp 3776 9252 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:06,423 log 3776 240 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:06,424 basehttp 3776 240 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:36:07,978 basehttp 3776 240 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:08,225 log 3776 12352 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:08,226 basehttp 3776 12352 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:36:09,960 basehttp 3776 12352 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:10,211 log 3776 3464 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:10,220 basehttp 3776 3464 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:36:18,685 basehttp 3776 3464 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:18,882 log 3776 8660 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:18,882 basehttp 3776 8660 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 20:36:22,169 log 3776 8660 Not Found: /income/income-summary/{%static 'css/sb-admin-2.min.css %'}
+WARNING 2026-04-28 20:36:22,171 basehttp 3776 8660 "GET /income/income-summary/%7B%static%20'css/sb-admin-2.min.css%20%'%7D HTTP/1.1" 404 9072
+WARNING 2026-04-28 20:36:22,196 basehttp 3776 8660 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 20:36:22,396 log 3776 2180 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 20:36:22,397 basehttp 3776 2180 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:06:25,371 basehttp 328 5648 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:06:25,418 log 328 7640 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:06:25,422 basehttp 328 7640 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:06:25,881 log 328 12784 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:06:25,894 basehttp 328 7640 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:06:25,908 basehttp 328 12784 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:06:41,485 log 328 5856 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:06:41,485 basehttp 328 12784 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:06:41,488 basehttp 328 5856 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:06:41,868 log 328 5856 Not Found: /favicon.ico
+WARNING 2026-04-28 21:06:41,874 basehttp 328 5856 "GET /favicon.ico HTTP/1.1" 404 5462
+WARNING 2026-04-28 21:06:51,399 basehttp 328 11716 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:06:51,424 log 328 2376 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:06:51,436 basehttp 328 2376 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:07:01,979 log 328 5856 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:07:01,992 basehttp 328 2376 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:07:01,993 basehttp 328 5856 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:07:05,810 log 328 6996 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:07:05,810 basehttp 328 5856 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:07:05,813 basehttp 328 6996 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:19:29,772 log 12456 12396 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:19:29,772 basehttp 12456 7184 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:19:29,772 basehttp 12456 12396 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:19:36,178 log 12456 12836 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:19:36,193 basehttp 12456 12836 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:19:36,194 basehttp 12456 12396 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:19:39,736 basehttp 12456 12836 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:19:39,743 log 12456 2604 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:19:39,746 basehttp 12456 2604 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:19:42,367 basehttp 12456 2604 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:19:42,383 log 12456 3956 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:19:42,386 basehttp 12456 3956 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:19:45,319 log 12456 12868 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:19:45,333 basehttp 12456 3956 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:19:45,333 basehttp 12456 12868 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:20:07,994 log 12456 12480 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:20:08,008 basehttp 12456 12868 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:20:08,008 basehttp 12456 12480 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:20:19,659 log 12456 6188 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:20:19,674 basehttp 12456 12480 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:20:19,675 basehttp 12456 6188 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:20:31,138 log 12456 13324 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:20:31,155 basehttp 12456 6188 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:20:31,155 basehttp 12456 13324 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:20:42,840 log 12456 13232 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:20:42,851 basehttp 12456 13324 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:20:42,852 basehttp 12456 13232 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
+WARNING 2026-04-28 21:20:47,646 basehttp 12456 13232 "GET /static/js/bootstrap.min.js HTTP/1.1" 404 1871
+WARNING 2026-04-28 21:20:47,655 log 12456 7508 Not Found: /docs/5.3/dist/js/bootstrap.bundle.min.js
+WARNING 2026-04-28 21:20:47,675 basehttp 12456 7508 "GET /docs/5.3/dist/js/bootstrap.bundle.min.js HTTP/1.1" 404 5549
