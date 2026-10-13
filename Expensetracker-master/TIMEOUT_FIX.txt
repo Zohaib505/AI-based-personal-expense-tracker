@@ -1,0 +1,82 @@
+========================================
+TIMEOUT ERROR FIX GUIDE
+========================================
+
+ISSUE: Application crashes with timeout errors after some time of use.
+
+ROOT CAUSES:
+1. Redis not running (Celery broker fails)
+2. Low timeout values in Django settings
+3. Heavy operations timing out (forecast, reports)
+4. Database connections exhausted
+
+========================================
+SOLUTIONS IMPLEMENTED:
+========================================
+
+✓ UPDATED SETTINGS (expensetracker/settings.py):
+  - CELERY_TASK_TIME_LIMIT: 30 minutes
+  - CELERY_TASK_SOFT_TIME_LIMIT: 25 minutes
+  - Celery broker retry enabled
+  - Database connection pooling: 600 seconds
+  - Request timeout: 300 seconds
+
+✓ CREATED CELERY CONFIG (celery_config.py):
+  - Auto-detects Redis availability
+  - Falls back to in-process if Redis unavailable
+  - Proper error handling
+
+========================================
+QUICK FIX STEPS:
+========================================
+
+1. OPTION A: Install and Run Redis (Recommended)
+   
+   # Install Redis
+   conda run -n fyp pip install redis
+   
+   # Then get Redis server from:
+   # - Windows Subsystem for Linux (WSL)
+   # - Or use: choco install redis (with Chocolatey)
+   # - Or download from: https://github.com/microsoftarchive/redis/releases
+
+2. OPTION B: Use In-Process Task Execution (No Redis needed)
+   
+   # The fallback is already configured in celery_config.py
+   # Tasks will run synchronously instead of asynchronously
+   # (Slower but works without Redis)
+
+3. Restart the Django Server
+
+   # Stop current server (Ctrl+C in terminal)
+   # Then start again with:
+   cd "C:\Users\jk\Documents\FYP more strong option\Expensetracker-master"
+   .\start_server.bat
+
+========================================
+TESTING:
+========================================
+
+1. Open http://localhost:8000/
+2. Try operations that previously timed out:
+   - Add multiple expenses
+   - Generate forecast
+   - Create reports
+   - View statistics
+
+3. These should now complete without timeout errors.
+
+========================================
+IF STILL EXPERIENCING TIMEOUTS:
+========================================
+
+Check server terminal for error messages:
+- Look for "Redis connection failed" → Use Option B above
+- Look for "Timeout" errors → Increase timeout values further
+- Look for "Database error" → Check if db.sqlite3 is corrupted
+
+Increase timeout values more in settings.py:
+- Change CELERY_TASK_TIME_LIMIT to 60 * 60 (1 hour)
+- Change request timeout to 600 (10 minutes)
+
+========================================
