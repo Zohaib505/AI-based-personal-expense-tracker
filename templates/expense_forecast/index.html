@@ -22,7 +22,7 @@
                 {% for row in forecast_data %}
                 <tr>
                     <td>{{ row.Date }}</td>
-                    <td>{{ row.Forecasted_Expenses }}</td>
+                    <td>{{ row.Forecasted_Expenses }} {{ currency }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Display the total expenses at the end of the 30-day forecast period -->
-    <h2 class="mt-4">Total Predicted Expense at the end of 30 days: <b>{{total_forecasted_expenses}} </b></h2>
+    <h2 class="mt-4">Total Predicted Expense at the end of 30 days: <b>{{ total_forecasted_expenses }} {{ currency }}</b></h2>
 
 
     <!-- Display total forecasted expenses per category -->

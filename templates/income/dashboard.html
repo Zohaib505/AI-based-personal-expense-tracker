@@ -57,7 +57,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Earnings (Daily)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">&#8377; {{daily_income}}
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{currency}} {{daily_income}}
                                             </div>
                                         </div>
                                         <div class="col-auto">
@@ -76,7 +76,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Earnings (Weekly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">&#8377;
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{currency}}
                                                 {{weekly_income}}</div>
                                         </div>
                                         <div class="col-auto">
@@ -98,7 +98,7 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">&#8377;
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{currency}}
                                                         {{monthly_income}}</div>
                                                 </div>
                                                 <div class="col">
@@ -126,7 +126,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 Earnings (Yearly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">&#8377;
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{currency}}
                                                 {{yearly_income}}</div>
                                         </div>
                                         <div class="col-auto">
@@ -243,7 +243,7 @@
                 <script src="{%static 'js/Chart.min.js' %}"></script>
 
                 <!-- Page level custom scripts -->
-                <script src="{% static 'js/chart-area-demo.js' %}"></script>
+                <script src="{% static 'js/chart-area-demo.js' %}?v=3"></script>
                 <script src="{% static 'js/chart-pie-demo.js' %}"></script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

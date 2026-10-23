@@ -4,6 +4,8 @@ from .forms import GoalForm, AddAmountForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.mail import send_mail
+from userpreferences.models import UserPreference
+from expenses.views import get_currency_symbol
 
 @login_required(login_url='/authentication/login')
 def add_goal(request):
@@ -25,8 +27,16 @@ def list_goals(request):
     # goals = Goal.objects.all()
     goals = Goal.objects.filter(owner=request.user)
   
-    add_amount_form = AddAmountForm() 
-    return render(request, 'goals/list_goals.html', {'goals': goals, 'add_amount_form': add_amount_form})
+    add_amount_form = AddAmountForm()
+    
+    # Get user currency
+    try:
+        user_currency = UserPreference.objects.get(user=request.user).currency
+        currency = get_currency_symbol(user_currency)
+    except:
+        currency = 'PKR'
+    
+    return render(request, 'goals/list_goals.html', {'goals': goals, 'add_amount_form': add_amount_form, 'currency': currency})
 
 
 @login_required(login_url='/authentication/login')

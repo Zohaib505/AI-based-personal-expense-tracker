@@ -11,8 +11,8 @@
         <h3>{{ goal.name }}</h3>
         <p><strong>Start Date:</strong> {{ goal.start_date }}</p>
         <p><strong>End Date:</strong> {{ goal.end_date }}</p>
-        <p><strong>Amount to Save:</strong> &#8377; {{ goal.amount_to_save }}</p>
-        <p><strong>Current Saved Amount:</strong> &#8377; {{ goal.current_saved_amount }}</p>
+        <p><strong>Amount to Save:</strong> {{currency}} {{ goal.amount_to_save }}</p>
+        <p><strong>Current Saved Amount:</strong> {{currency}} {{ goal.current_saved_amount }}</p>
         {% if goal.calculate_progress.saved_percentage > 0 %}
         <div class="progress" style="height: 20px;">
             <div class="progress-bar" role="progressbar" style="width: {{ goal.calculate_progress.saved_percentage }}%;"
@@ -24,7 +24,7 @@
         {% else %}
         <p>Progress not available</p>
         {% endif %}
-        <p class="mt-2"><strong>Daily Savings Required:</strong> &#8377;
+        <p class="mt-2"><strong>Daily Savings Required:</strong> {{currency}}
             {{goal.calculate_progress.daily_savings_required }}
         </p>
 

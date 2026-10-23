@@ -18,11 +18,54 @@
     <div class="card">
         <div class="card-body">
             <form action="{% url 'add-expenses' %}" method="post" id="expense-form">
-                {% include 'partials/_messages.html'%}
                 {% csrf_token %}
+                
+                <!-- ============================================================ -->
+                <!-- 📸 RECEIPT SCANNING SECTION -->
+                <!-- ============================================================ -->
+                <div class="alert alert-info" role="alert">
+                <h5><i class="fas fa-camera"></i> Receipt Scanning (Optional)</h5>
+                <p>Upload a receipt image to automatically extract amount, date, and vendor information.</p>
                 <div class="form-group">
-                    <label for="">Amount</label>
-                    <input type="number" class="form-control form-control-sm" name="amount" value="{{values.amount}}" />
+                    <label for="receipt-file">📷 Select Receipt Image</label>
+                    <input type="file" id="receipt-file" class="form-control-file" accept="image/*">
+                    <small class="form-text text-muted">Supports: JPG, PNG, BMP, GIF (Max 5MB)</small>
+                </div>
+                
+                <!-- Image Preview -->
+                <div id="preview-container" style="display: none; margin: 10px 0;">
+                    <img id="receipt-preview" src="" alt="Receipt Preview" style="max-width: 100%; max-height: 300px; border: 1px solid #ccc; padding: 5px;">
+                </div>
+                
+                <!-- Scan Button and Loading -->
+                <div id="scan-controls">
+                    <button type="button" id="scan-btn" class="btn btn-info btn-sm" style="display: none;">
+                        <i class="fas fa-search"></i> Scan Receipt
+                    </button>
+                    <span id="scan-loading" style="display: none;">
+                        <img class="loader" src="{% static 'img/loader.gif' %}" alt="Scanning..." width="20">
+                        Scanning receipt... (may take 30-60 seconds)
+                    </span>
+                    <span id="scan-result" class="alert" style="display: none; margin-top: 10px;"></span>
+                </div>
+                
+                <hr>
+
+                <!-- ============================================================ -->
+                <!-- 🎤 VOICE INPUT SECTION (NEW FEATURE) -->
+                <!-- ============================================================ -->
+                {% include 'partials/voice_input_component.html' %}
+
+                <hr>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- MANUAL ENTRY FORM -->
+            <!-- ============================================================ -->
+                {% include 'partials/_messages.html'%}
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" class="form-control form-control-sm" name="amount" value="{{values.amount}}" />
                 </div>
                 <div class="form-group">
                     <label for="">Description</label>
@@ -57,8 +100,8 @@
 
 
                 <div class="form-group">
-                    <label for="">Date of Expense</label>
-                    <input type="date" class="form-control form-control-sm" name="expense_date" />
+                    <label for="expense_date">Date of Expense</label>
+                    <input type="date" id="expense_date" class="form-control form-control-sm" name="expense_date" />
                 </div>
 
                 <input type="submit" id="btn" value="Submit" class="btn btn-primary btn-primary-sm" />
@@ -70,50 +113,50 @@
 
 <!-- Add JavaScript to make category predictions -->
 {% block js %}
-
-
-
 // Function to predict category based on description
 function predictCategory() {
-const description = document.getElementById('description-input').value;
-if (description) {
-// Display the loading indicator
-document.getElementById('loading-indicator').style.display = 'inline';
-
-// Send a request to your server to predict the category
-const formData = new FormData();
-formData.append('description', description);
-fetch('{% url "predict-category" %}', {
-method: 'POST',
-body: formData,
-headers: {
-'X-CSRFToken': getCookie('csrftoken')
-},
-})
-.then(response => response.json())
-.then(data => {
-// Hide the loading indicator
-document.getElementById('loading-indicator').style.display = 'none';
-
-// Update the category select input with the predicted category
-const categorySelect = document.getElementById('category-input');
-setTimeout(()=>{
-categorySelect.value = data.predicted_category;
-categorySelect.style.color="black";
-},3000);
-categorySelect.value="Predicting Category...."
-categorySelect.style.color="green";
-// Display the predicted category below the description input
-const predictedCategoryDiv = document.getElementById('predicted-category');
-predictedCategoryDiv.innerHTML = `Predicted Category: ${data.predicted_category}`;
-})
-.catch(error => {
-<!-- console.error('Error predicting category:', error); -->
-// Hide the loading indicator in case of an error
-document.getElementById('loading-indicator').style.display = 'none';
-<!-- categoryInput.value = data.predicted_category; -->
-});
-}
+    const description = document.getElementById('description-input')?.value;
+    const categoryInput = document.getElementById('category-input');
+    const loadingIndicator = document.getElementById('loading-indicator');
+    
+    if (!description || description.length < 2) {
+        return;
+    }
+    
+    if (loadingIndicator) {
+        loadingIndicator.style.display = 'inline';
+    }
+    
+    // Send a request to your server to predict the category using JSON
+    fetch('{% url "predict-category" %}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken')
+        },
+        body: JSON.stringify({description: description})
+    })
+    .then(response => {
+        if (!response.ok) throw new Error(`API error: ${response.status}`);
+        return response.json();
+    })
+    .then(data => {
+        if (loadingIndicator) {
+            loadingIndicator.style.display = 'none';
+        }
+        
+        if (data.predicted_category && categoryInput) {
+            categoryInput.value = data.predicted_category;
+            categoryInput.style.color = 'black';
+            console.log('Category predicted:', data.predicted_category);
+        }
+    })
+    .catch(error => {
+        console.error('Category prediction error:', error);
+        if (loadingIndicator) {
+            loadingIndicator.style.display = 'none';
+        }
+    });
 }
 
 // Function to get the CSRF token from cookies
@@ -124,6 +167,124 @@ if (parts.length === 2) return parts.pop().split(';').shift();
 }
 
 // Listen for input changes in the description field
-const descriptionInput = document.getElementById('description-input');
-descriptionInput.addEventListener('input', predictCategory);
+let predictCategoryTimeout = null;
+document.addEventListener('DOMContentLoaded', function() {
+    const descriptionInput = document.getElementById('description-input');
+    if (descriptionInput) {
+        descriptionInput.addEventListener('input', function() {
+            clearTimeout(predictCategoryTimeout);
+            predictCategoryTimeout = setTimeout(() => {
+                predictCategory();
+            }, 500); // Debounce by 500ms to avoid too many API calls
+        });
+    }
+});
+
+// Also allow manual prediction calls from voice input
+window.predictCategory = predictCategory;
+
+// ============================================================
+// 📸 RECEIPT SCANNING FUNCTIONALITY
+// ============================================================
+
+const receiptFileInput = document.getElementById('receipt-file');
+const previewContainer = document.getElementById('preview-container');
+const receiptPreview = document.getElementById('receipt-preview');
+const scanBtn = document.getElementById('scan-btn');
+const scanLoading = document.getElementById('scan-loading');
+const scanResult = document.getElementById('scan-result');
+
+// Handle file selection and preview
+receiptFileInput.addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    
+    if (file) {
+        // Validate file size
+        if (file.size > 5 * 1024 * 1024) {
+            alert('File too large! Maximum size is 5MB');
+            receiptFileInput.value = '';
+            return;
+        }
+        
+        // Validate file type
+        if (!file.type.startsWith('image/')) {
+            alert('Please select a valid image file');
+            receiptFileInput.value = '';
+            return;
+        }
+        
+        // Show preview
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            receiptPreview.src = e.target.result;
+            previewContainer.style.display = 'block';
+            scanBtn.style.display = 'inline-block';
+            scanResult.style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+// Handle receipt scanning
+scanBtn.addEventListener('click', function() {
+    const file = receiptFileInput.files[0];
+    
+    if (!file) {
+        alert('Please select a receipt image first');
+        return;
+    }
+    
+    // Show loading indicator
+    scanLoading.style.display = 'inline';
+    scanBtn.style.display = 'none';
+    scanResult.style.display = 'none';
+    
+    // Create FormData
+    const formData = new FormData();
+    formData.append('receipt_image', file);
+    
+    // Send to backend
+    fetch('{% url "scan_receipt" %}', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRFToken': getCookie('csrftoken')
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        scanLoading.style.display = 'none';
+        
+        if (data.success) {
+            // Populate form fields with extracted data
+            document.getElementById('amount').value = data.amount;
+            document.getElementById('expense_date').value = data.date;
+            document.getElementById('description-input').value = data.description;
+            
+            // Show success message
+            scanResult.innerHTML = `<strong>✅ Success!</strong><br>Amount: PKR ${data.amount}<br>Date: ${data.date}<br>Vendor: ${data.vendor}`;
+            scanResult.className = 'alert alert-success';
+            scanResult.style.display = 'block';
+            
+            // Trigger category prediction
+            setTimeout(() => {
+                predictCategory();
+            }, 500);
+        } else {
+            // Show error message
+            scanResult.innerHTML = `<strong>❌ Error:</strong> ${data.error}<br><small>Extracted text: ${data.extracted_text || 'N/A'}</small>`;
+            scanResult.className = 'alert alert-danger';
+            scanResult.style.display = 'block';
+            scanBtn.style.display = 'inline-block';
+        }
+    })
+    .catch(error => {
+        scanLoading.style.display = 'none';
+        scanBtn.style.display = 'inline-block';
+        scanResult.innerHTML = `<strong>❌ Error:</strong> ${error.message}`;
+        scanResult.className = 'alert alert-danger';
+        scanResult.style.display = 'block';
+        console.error('Receipt scanning error:', error);
+    });
+});
 {% endblock js %}

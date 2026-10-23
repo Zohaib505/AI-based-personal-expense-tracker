@@ -59,7 +59,9 @@ INSTALLED_APPS = [
     'api',
     'goals',
     'userprofile',
-    'report_generation'
+    'report_generation',
+    'voice_feature',
+    'ai_utils',  # Custom app for AI integration
 ]
 
 MIDDLEWARE = [
@@ -70,11 +72,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
 ]
 
 ROOT_URLCONF = 'expensetracker.urls'
+LOGIN_URL = '/authentication/login/'
 
 TEMPLATES = [
     {
@@ -294,3 +295,8 @@ LOGGING = {
 # Create logs directory if it doesn't exist
 LOGS_DIR = os.path.join(BASE_DIR, 'logs')
 os.makedirs(LOGS_DIR, exist_ok=True)
+
+## Additional settings for AI integration
+# Ollama API settings
+from django.contrib import admin
+from django.urls import path, include

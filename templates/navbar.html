@@ -63,8 +63,10 @@
                 </div>
                 {% else %}
                 <!-- <a href="#" class="user">Guest</a> -->
-                <a href="{%url 'login'%}">Login</a>
-                <a href="{%url 'register'%}">Register</a>
+                <a href="{%url 'login'%}" style="margin-right: 10px;">Login</a>
+                <a href="{%url 'register'%}" style="background-color: #28a745; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </a>
                 {%endif%}
 
 

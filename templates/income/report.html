@@ -56,7 +56,7 @@
             <tr>
                 <td>{{ income.date }}</td>
                 <td>{{ income.source }}</td>
-                <td>&#8377; {{ income.amount }}</td>
+                <td>{{currency}} {{ income.amount }}</td>
             </tr>
             {% endfor %}
         </tbody>
@@ -79,7 +79,7 @@
             <tr>
                 <td>{{ expense.date }}</td>
                 <td>{{ expense.category }}</td>
-                <td>&#8377; {{ expense.amount }}</td>
+                <td>{{currency}} {{ expense.amount }}</td>
             </tr>
             {% endfor %}
         </tbody>
@@ -89,9 +89,9 @@
     {% if total_income is not None and total_expense is not None %}
     <!-- Savings Calculation -->
     <h2>Savings:</h2>
-    <p>Total Income: &#8377; {{ total_income }}</p>
-    <p>Total Expenses: &#8377; {{ total_expense }}</p>
-    <p>Total Savings: &#8377;
+    <p>Total Income: {{currency}} {{ total_income }}</p>
+    <p>Total Expenses: {{currency}} {{ total_expense }}</p>
+    <p>Total Savings: {{currency}}
         {% if savings < 0 %} 0 {%else%} {{ savings }} {% endif %} </p>
 
             {% if savings > 0 %}

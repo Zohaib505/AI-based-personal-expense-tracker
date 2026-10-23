@@ -5,6 +5,7 @@ from statsmodels.tsa.arima.model import ARIMA
 import matplotlib.pyplot as plt
 from django.utils.timezone import now
 from expenses.models import Expense
+from userpreferences.models import UserPreference
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 import logging
@@ -53,6 +54,9 @@ def forecast(request):
             'Forecasted_Expenses': forecast_result.values
         })
         
+        # Round forecasted expenses to whole numbers
+        forecast_data['Forecasted_Expenses'] = forecast_data['Forecasted_Expenses'].round(0).astype(int)
+        
         # Convert the forecast data to a list of dictionaries
         forecast_data_list = forecast_data.to_dict(orient='records')
 
@@ -71,13 +75,17 @@ def forecast(request):
         plt.savefig(plot_file, dpi=100, bbox_inches='tight')
         plt.close()
         
+        # Get user's currency preference
+        user_currency = UserPreference.objects.get(user=request.user).currency
+        
         logger.info(f"Forecast generated successfully for user {request.user}")
 
         # Pass the data to the template
         context = {
             'forecast_data': forecast_data_list,
             'plot_file': plot_file,
-            'total_forecasted_expenses': float(np.sum(forecast_result)),
+            'total_forecasted_expenses': int(np.round(np.sum(forecast_result))),
+            'currency': user_currency,
         }
 
         return render(request, 'expense_forecast/index.html', context)

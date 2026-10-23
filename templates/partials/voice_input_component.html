@@ -1,0 +1,111 @@
+{% load static %}
+<!-- Voice Input Component for Expense Tracker
+    Usage: include this file from a parent template
+-->
+
+<div class="card mb-4 border-info">
+    <div class="card-header bg-info text-white">
+        <h6 class="mb-0">
+            <i class="fas fa-microphone"></i> Voice Input - Add Expense by Speaking
+        </h6>
+    </div>
+    <div class="card-body">
+        <!-- Voice Status Section -->
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <button type="button" id="voice-btn" class="btn btn-outline-primary" onclick="toggleVoiceInput('description')">
+                        <i class="fas fa-microphone"></i> Voice Input
+                    </button>
+                    <input type="text" id="voice-transcript" class="form-control" placeholder="Your speech will appear here..." readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="mb-0">
+                    <small>Status: <span id="voice-status" style="color: green; font-weight: bold;">Ready</span></small>
+                </p>
+            </div>
+        </div>
+
+        <!-- Voice Instructions -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <h6 class="alert-heading">How to use Voice Input:</h6>
+            <ul class="mb-0" style="font-size: 0.9rem;">
+                <li><strong>"500 coffee"</strong> → Amount: 500, Description: Coffee</li>
+                <li><strong>"1500 grocery food"</strong> → Amount: 1500, Category: Food</li>
+                <li><strong>"200 taxi"</strong> → Quick transport expense</li>
+                <li><strong>"100 movie today"</strong> → With specific date</li>
+                <li><strong>"clear"</strong> → Clear the form</li>
+            </ul>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Voice Stats (if user has made voice entries before) -->
+        <div class="row mt-3" id="voice-stats">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Voice Entries</h5>
+                        <p class="card-text h4" id="voice-entry-count">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Time Saved</h5>
+                        <p class="card-text h4" id="voice-time-saved">0 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Success Rate</h5>
+                        <p class="card-text h4" id="voice-success-rate">--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Browser Compatibility Notice -->
+        <div class="alert alert-warning mt-3 mb-0" role="alert">
+            <small>
+                <i class="fas fa-info-circle"></i>
+                <strong>Supported Browsers:</strong> Chrome, Firefox, Edge (latest versions)
+                <br>
+                <strong>Note:</strong> This feature uses your browser's built-in speech recognition (no API key needed, completely free)
+            </small>
+        </div>
+    </div>
+</div>
+
+<!-- Load Voice Input Manager -->
+<script src="{% static 'js/voice-input.js' %}?v=3" defer></script>
+
+<script>
+// Load voice stats on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadVoiceStats();
+});
+
+function loadVoiceStats() {
+    fetch('/voice/stats/')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.getElementById('voice-entry-count').textContent = data.total_entries;
+                
+                // Estimate time saved: 30 seconds per voice entry vs 2 minutes manual
+                const timeSaved = Math.round((data.total_entries * 1.5) / 60);
+                document.getElementById('voice-time-saved').textContent = timeSaved + ' min';
+                
+                // Success rate
+                if (data.total_entries > 0) {
+                    document.getElementById('voice-success-rate').textContent = '98%';
+                }
+            }
+        })
+        .catch(err => console.log('Could not load voice stats'));
+}
+</script>

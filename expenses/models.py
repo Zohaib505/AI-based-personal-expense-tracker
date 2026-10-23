@@ -6,11 +6,19 @@ from django.utils.timezone import now
 
 
 class Expense(models.Model):
+    SOURCE_CHOICES = [
+        ('manual', 'Manual Entry'),
+        ('voice_input', 'Voice Input'),
+        ('receipt_scan', 'Receipt Scan'),
+        ('api', 'API'),
+    ]
+    
     amount = models.FloatField()
     date = models.DateField(default=now)
     description = models.TextField()
     owner = models.ForeignKey(to=User, on_delete=models.CASCADE)
     category = models.CharField(max_length=266)
+    created_from = models.CharField(max_length=20, choices=SOURCE_CHOICES, default='manual')
 
     def __str__(self):
         return self.category

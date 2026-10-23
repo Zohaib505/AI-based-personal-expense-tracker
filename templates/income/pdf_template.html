@@ -49,7 +49,7 @@
                 <tr>
                     <td>{{ income.date }}</td>
                     <td>{{ income.source }}</td>
-                    <td> {{ income.amount }}</td>
+                    <td>{{currency}} {{ income.amount }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -72,7 +72,7 @@
                 <tr>
                     <td>{{ expense.date }}</td>
                     <td>{{ expense.category }}</td>
-                    <td> {{ expense.amount }}</td>
+                    <td>{{currency}} {{ expense.amount }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -86,15 +86,15 @@
             <tbody>
                 <tr>
                     <td>Total Income:</td>
-                    <td> {{ total_income }}</td>
+                    <td>{{currency}} {{ total_income }}</td>
                 </tr>
                 <tr>
                     <td>Total Expenses:</td>
-                    <td> {{ total_expense }}</td>
+                    <td>{{currency}} {{ total_expense }}</td>
                 </tr>
                 <tr>
                     <td>Total Savings:</td>
-                    <td> {{ savings }}</td>
+                    <td>{{currency}} {{ savings }}</td>
                 </tr>
                 <tr>
                     <td>Status:</td>

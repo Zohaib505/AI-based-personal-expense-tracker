@@ -210,22 +210,48 @@ def delete_income(request, id):
 def income_summary(request):
     user = request.user  # Get the logged-in user
 
-    today = timezone.now()
+    today = date.today()
     one_week_ago = today - timedelta(days=7)
     first_day_of_month = today.replace(day=1)
     first_day_of_year = today.replace(month=1, day=1)
+    # For better data visibility, show last 30/90 days if current month is empty
+    thirty_days_ago = today - timedelta(days=30)
+    ninety_days_ago = today - timedelta(days=90)
 
     # Query the database to get daily, weekly, monthly, and yearly income for the logged-in user
-    daily_income = user.userincome_set.filter(date=today).aggregate(Sum('amount'))['amount__sum'] or 0
-    weekly_income = user.userincome_set.filter(date__range=[one_week_ago, today]).aggregate(Sum('amount'))['amount__sum'] or 0
-    monthly_income = user.userincome_set.filter(date__month=today.month).aggregate(Sum('amount'))['amount__sum'] or 0
-    yearly_income = user.userincome_set.filter(date__year=today.year).aggregate(Sum('amount'))['amount__sum'] or 0
+    daily_income = UserIncome.objects.filter(owner=user, date=today).aggregate(Sum('amount'))['amount__sum'] or 0
+    
+    # Weekly: Last 7 days, fallback to last 30 days if empty
+    weekly_income = UserIncome.objects.filter(owner=user, date__range=[one_week_ago, today]).aggregate(Sum('amount'))['amount__sum'] or 0
+    if weekly_income == 0:
+        weekly_income = UserIncome.objects.filter(owner=user, date__range=[thirty_days_ago, today]).aggregate(Sum('amount'))['amount__sum'] or 0
+    
+    # Monthly: Current month, fallback to last 90 days if empty
+    monthly_income = UserIncome.objects.filter(
+        owner=user,
+        date__range=[first_day_of_month, today],
+    ).aggregate(Sum('amount'))['amount__sum'] or 0
+    if monthly_income == 0:
+        monthly_income = UserIncome.objects.filter(owner=user, date__range=[ninety_days_ago, today]).aggregate(Sum('amount'))['amount__sum'] or 0
+    
+    yearly_income = UserIncome.objects.filter(
+        owner=user,
+        date__range=[first_day_of_year, today],
+    ).aggregate(Sum('amount'))['amount__sum'] or 0
+
+    # Get user currency
+    try:
+        user_currency = UserPreference.objects.get(user=user).currency
+        currency = get_currency_symbol(user_currency)
+    except:
+        currency = 'PKR'
 
     context = {
         'daily_income': daily_income,
         'weekly_income': weekly_income,
         'monthly_income': monthly_income,
         'yearly_income': yearly_income,
+        'currency': currency,
         # You can add more context data here if needed
     }
     return render(request, 'income/dashboard.html', context)
@@ -270,7 +296,7 @@ def monthly_income_data(request):
     # Get the monthly income data for the current year, grouped by month
     monthly_data = (
         UserIncome.objects
-        .filter(date__year=current_year)  # Filter for the current year
+        .filter(owner=request.user, date__year=current_year)  # Filter for the current year and current user
         .annotate(month=ExtractMonth('date'))
         .values('month')
         .annotate(total_income=Sum('amount'))
@@ -300,15 +326,21 @@ def get_monthly_income(request):
     # Create a list to hold income data for all 12 months
     monthly_data = [0] * 12
 
-    # Retrieve and fill in the actual monthly income data
-    income_data = UserIncome.objects.filter(
-        date__range=(first_day_of_year, last_day_of_year),
-        owner=request.user
-    ).values('date', 'amount')
+    # Sum income by month instead of overwriting entries
+    income_data = (
+        UserIncome.objects.filter(
+            date__range=(first_day_of_year, last_day_of_year),
+            owner=request.user,
+        )
+        .annotate(month=ExtractMonth('date'))
+        .values('month')
+        .annotate(total_income=Sum('amount'))
+        .order_by('month')
+    )
 
     for entry in income_data:
-        month = entry['date'].month - 1  # Convert month (1-12) to index (0-11)
-        monthly_data[month] = entry['amount']
+        month = entry['month'] - 1  # Convert month (1-12) to index (0-11)
+        monthly_data[month] = entry['total_income']
 
     return JsonResponse({'monthly_data': monthly_data})
 
@@ -339,6 +371,13 @@ def export_pdf(request):
     
     savings = total_income - total_expense
     
+    # Get user currency
+    try:
+        user_currency = UserPreference.objects.get(user=request.user).currency
+        currency = get_currency_symbol(user_currency)
+    except:
+        currency = 'PKR'
+    
     context = {
         'incomes': incomes,
         'expenses': expenses,
@@ -347,6 +386,7 @@ def export_pdf(request):
         'savings': savings,
         'start_date': start_date,
         'end_date': end_date,
+        'currency': currency,
     }
     
     pdf = render_to_pdf('income/pdf_template.html', context)
@@ -379,6 +419,13 @@ def generate_report(request):
 
         savings = total_income - total_expense
         
+        # Get user currency
+        try:
+            user_currency = UserPreference.objects.get(user=user).currency
+            currency = get_currency_symbol(user_currency)
+        except:
+            currency = 'PKR'
+        
         context = {
             'incomes': incomes,
             'expenses': expenses,
@@ -387,7 +434,8 @@ def generate_report(request):
             'savings': savings,
             'start_date': start_date,
             'end_date': end_date,
-            'report_generated':report_generated
+            'report_generated':report_generated,
+            'currency': currency,
         }
 
         return render(request, 'income/report.html', context)

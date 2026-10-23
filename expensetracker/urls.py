@@ -26,7 +26,8 @@ urlpatterns = [
     path('forecast/', include('expense_forecast.urls')),
     path('api/', include('api.urls')),
     path('goals/',include('goals.urls')),
-    path('account/',include('userprofile.urls'))
+    path('account/',include('userprofile.urls')),
+    path('voice/', include('voice_feature.urls'))
 ]
 
 # Custom error handlers

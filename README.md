@@ -6,6 +6,8 @@
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat&logo=python)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5.1-orange?style=flat&logo=scikit-learn)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-red?style=flat)](LICENSE)
+[![Ollama](https://img.shields.io/badge/Ollama-Qwen_2.5_3B-black?style=flat&logo=ollama)](https://ollama.ai/)
+[![AI Assistant](https://img.shields.io/badge/AI_Assistant-v2.0_Interactive_Agent-6366f1?style=flat)](https://github.com/Zohaib505/AI-based-personal-expense-tracker)
 
 ---
 
@@ -59,7 +61,15 @@ ExpenseTracker solves these problems by providing:
 
 ## ✨ Key Features
 
-### 1. **Intelligent Expense Tracking**
+### 1. **🤖 Floatable Smart AI Expense Assistant (v2.0 Spotlight)**
+ExpenseTracker now includes an **intelligent, floating AI pair-financial agent** powered by local LLMs via **Ollama & Qwen 2.5 3B**:
+- **Floatable & Draggable Anywhere:** Move the assistant to any part of your screen with smooth drag-and-drop and persistent screen coordinate memory across pages.
+- **Natural Language Expense Recording:** Simply type or say *"Spent $25 on fuel today"* or *"Paid $18 for sushi lunch"* — the assistant calls native backend tools to automatically parse the amount, infer categories, and write the expense to your database.
+- **Instant Financial Summaries:** Ask *"How much have I spent so far?"* or tap quick suggestion chips for real-time live balance aggregation.
+- **100% Local & Privacy-Preserving:** Zero third-party API dependencies or subscription keys — your financial data never leaves your machine.
+- **Sub-Second Performance & Memory Caching:** Smart model keep-alive, progressive status indicator ("Thinking..." → "Executing action..."), and instant greeting handling.
+
+### 2. **Intelligent Expense Tracking**
 - Add, edit, and delete expenses with ease
 - Real-time expense list with filtering and search
 - Category-wise expense breakdown
@@ -309,6 +319,23 @@ Expense.objects.filter(owner=request.user)
 
 ## 🚀 Installation & Setup
 
+### 🤖 Setting Up the AI Assistant (Local LLM via Ollama)
+
+The AI Expense Assistant runs locally on your machine using **Ollama** and **Qwen 2.5 (3B)**:
+
+1. **Install Ollama:** Download and install from [ollama.ai](https://ollama.ai/).
+2. **Pull the Qwen 2.5 model:**
+   ```bash
+   ollama pull qwen2.5:3b
+   ```
+3. **Verify Ollama is running:**
+   ```bash
+   ollama list
+   ```
+   *The assistant connects automatically when you open the application!*
+
+---
+
 ### Prerequisites
 - Python 3.11+
 - Conda (Anaconda/Miniconda)
@@ -323,7 +350,7 @@ conda activate fyp
 
 #### 2. Navigate to Project
 ```bash
-cd "c:\Users\jk\Documents\dead final FYP\Expensetracker-master"
+cd "c:\Users\jk\Documents\dead final FYP - Copy\Expensetracker-master"
 ```
 
 #### 3. Apply Migrations

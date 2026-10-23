@@ -19,10 +19,6 @@ from django.conf import settings
 
 logger = logging.getLogger(__name__)  
 
-
-nltk.download('punkt')
-nltk.download('stopwords')
-
 # Import from expenses module to avoid duplication
 from expenses.views import preprocess_text
 

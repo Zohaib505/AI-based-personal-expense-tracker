@@ -99,7 +99,7 @@ var myLineChart = new Chart(ctx, {
             maxTicksLimit: 5,
             padding: 10,
             callback: function (value, index, values) {
-              return "$" + number_format(value);
+              return "PKR " + number_format(value);
             },
           },
           gridLines: {
@@ -133,7 +133,7 @@ var myLineChart = new Chart(ctx, {
         label: function (tooltipItem, chart) {
           var datasetLabel =
             chart.datasets[tooltipItem.datasetIndex].label || "";
-          return datasetLabel + ": $" + number_format(tooltipItem.yLabel);
+          return datasetLabel + ": PKR " + number_format(tooltipItem.yLabel);
         },
       },
     },
